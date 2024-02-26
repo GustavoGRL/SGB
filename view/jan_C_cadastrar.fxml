@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fx:id="scroll" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller_jan_C_cadastrar">
+   <content>
+      <HBox fx:id="hbox" prefHeight="400.0" prefWidth="599.0" spacing="50.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="158.0" spacing="20.0" fx:id="xbo_1">
+               <children>
+                  <Label fx:id="lab_nome" text="Nome">
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="tex_nome" />
+                  <Label fx:id="lab_mae" layoutX="70.0" layoutY="10.0" text="Mãe">
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="tex_mae" layoutX="10.0" layoutY="46.0" />
+                  <Label fx:id="lab_gender" layoutX="60.0" layoutY="102.0" text="Gênero">
+                     <padding>
+                        <Insets left="45.0" />
+                     </padding>
+                  </Label>
+                  <ChoiceBox fx:id="cho_gender" prefWidth="150.0" />
+                  <Button fx:id="but_cadastrar" mnemonicParsing="false" onAction="#cadastrar_crianca" prefHeight="31.0" prefWidth="152.0" text="Cadastrar" />
+                  <Button fx:id="but_voltar" layoutX="10.0" layoutY="286.0" mnemonicParsing="false" onAction="#to_scene_jan_C_inicio" prefHeight="31.0" prefWidth="152.0" text="Voltar" />
+               </children>
+            </VBox>
+            <VBox fx:id="vbo_2" layoutX="10.0" layoutY="10.0" prefHeight="0.0" prefWidth="158.0" spacing="20.0">
+               <children>
+                  <Label fx:id="lab_cpf" text="CPF">
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="tex_cpf" />
+                  <Label fx:id="lab_pai" layoutX="60.0" layoutY="10.0" text="Pai">
+                     <VBox.margin>
+                        <Insets left="55.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="tex_pai" layoutX="10.0" layoutY="51.0" />
+                  <Label fx:id="lab_doencas" layoutX="65.0" layoutY="102.0" text="Doenças">
+                     <VBox.margin>
+                        <Insets left="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="tex_doencas" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox fx:id="vbo_3" layoutX="168.0" layoutY="10.0" prefHeight="185.0" prefWidth="164.0" spacing="20.0">
+               <children>
+                  <Label fx:id="lab_data_nascimento" text="Data de nascimento">
+                     <VBox.margin>
+                        <Insets left="11.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="dat_data_nascimento" />
+                  <Label fx:id="lab_numero_contato" layoutX="21.0" layoutY="10.0" text="Numero de contato">
+                     <padding>
+                        <Insets left="11.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="tex_numero_contato" />
+                  <Label fx:id="label_endereco" layoutX="10.0" layoutY="102.0" text="Endereço">
+                     <padding>
+                        <Insets left="11.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="35.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="tex_endereco" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </content>
+</ScrollPane>

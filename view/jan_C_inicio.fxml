@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller_jan_C_inicio">
+   <children>
+      <Button fx:id="but_adicionar" layoutX="28.0" layoutY="123.0" mnemonicParsing="false" onAction="#to_jan_C_cadastrar" prefHeight="46.0" prefWidth="143.0" text="adicionar Criança" />
+      <Button fx:id="but_pesquisar" layoutX="28.0" layoutY="185.0" mnemonicParsing="false" onAction="#to_jan_C_pesquisar" prefHeight="46.0" prefWidth="143.0" text="pesquisar Criança" />
+      <Button fx:id="but_voltar" layoutX="441.0" layoutY="308.0" mnemonicParsing="false" onAction="#to_jan_main" prefHeight="38.0" prefWidth="89.0" text="voltar" />
+   </children>
+</AnchorPane>

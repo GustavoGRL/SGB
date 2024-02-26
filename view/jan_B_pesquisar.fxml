@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller_jan_B_pesquisar">
+  <children>
+    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ListView fx:id="listv_brinquedos" layoutX="15.0" layoutY="71.0" prefHeight="308.0" prefWidth="446.0" />
+            <Button fx:id="but_avancar" layoutX="475.0" layoutY="225.0" mnemonicParsing="false" onAction="#to_jan_B_informacoes" prefHeight="37.0" prefWidth="120.0" text="Avançar" />
+            <Button fx:id="but_voltar" layoutX="475.0" layoutY="289.0" mnemonicParsing="false" onAction="#to_jan_B_inicio" prefHeight="37.0" prefWidth="120.0" text="voltar" />
+            <TextField fx:id="tex_digitar" layoutX="104.0" layoutY="28.0" prefHeight="31.0" prefWidth="296.0" promptText="Digite o nome ou o id do brinquedo" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
